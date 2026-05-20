@@ -2,7 +2,7 @@ import socket
 
 HOST = "127.0.0.1"
 PORT = 50432
-##С помощью socket.socket() создаём объект сокета
+#С помощью socket.socket() создаём объект сокета
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
     # Привязывает сокет к адресу и порту
     sock.connect((HOST, PORT))
